@@ -3,7 +3,7 @@
 
   Inspect objects associated to DOM elements in web inspector.
 
-  ![](https://dsz91cxz97a03.cloudfront.net/Zfs2NAVmZY.png)
+  ![](https://dsz91cxz97a03.cloudfront.net/iXpnS5fQAW.png)
 
 ## Installation
 
