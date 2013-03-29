@@ -23,6 +23,8 @@ if (!enabled) {
 
 module.exports = function(el, obj, name){
   name = name || '_';
+  if (!el) throw new TypeError('element required');
+  el = el[0] || el;
   el[name] = obj;
   el.setAttribute('inspectable', '');
 };
