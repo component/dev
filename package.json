@@ -1,0 +1,14 @@
+{
+  "name": "dev-component",
+  "description": "Inspect objects associated to DOM elements in web inspector",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "component": {
+    "scripts": {
+      "dev/index.js": "index.js"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+<html>
+<head>
+  <title>Inspect</title>
+  <script src="build/build.js"></script>
+  <style>
+    body {
+      padding: 80px;
+      font: 16px/1.6 Helvetica;
+    }
+    p {
+      width: 600px;
+    }
+    code {
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <h1>Inspect</h1>
+  <p>Open web inspector, enable via <code>localStorage.dev = true</code>, refresh the page, view <code>_</code> in the "properties" panel or with <code>$0._</code>.</p>
+  <ul></ul>
+  <script>
+    var dev = require('dev');
+    var ul = document.querySelector('ul');
+
+    function UserView(user) {
+      this.user = user;
+      this.el = document.createElement('li');
+      this.el.textContent = user.name;
+      dev(this.el, user);
+    }
+
+    var users = [
+      { name: 'Tobi', species: 'ferret' },
+      { name: 'Loki', species: 'ferret' },
+      { name: 'Jane', species: 'ferret' }
+    ];
+
+    users.forEach(function(user){
+      var view = new UserView(user);
+      ul.appendChild(view.el);
+    });
+  </script>
+</body>
+</html>
