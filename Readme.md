@@ -1,4 +1,3 @@
-
 # dev
 
   Inspect objects associated to DOM elements in web inspector.
@@ -14,8 +13,8 @@
   When enabled via `localStorage.dev = true` the object
   is assigned as `_` on the element for inspection in the
   "properties" panel. This means when the element is selected
-  `$._` is also available. A name may be passed instead of "_"
-  however "_" is nice as it will display early in the properties list.
+  `$._` is also available. A name may be passed instead of `_`,
+  however `_` is nice as it will display early in the properties list.
 
 ## API
 
